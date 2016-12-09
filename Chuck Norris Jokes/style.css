@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  margin-top: -20px;
+  padding: 20px;
+  height: 104vh;
+  width: 100%;
+  background: url(http://www.gunaxin.com/wp-content/uploads/2015/09/Chuck-Norris-2-560x280.jpg) no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+
+#output1 {
+  min-height: 150px;
+  width: 500px;
+  box-shadow: inset -2px -2px 2px grey, inset 2px 2px 2px grey;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  color: #330000;
+  font-size: 25px;
+  border-radius: 0 10px 10px 10px;
+  border: 1px solid white;
+}
+
+#bttn {
+  border: 1px solid white;
+  border-bottom: transparent;
+  height: auto;
+  width: 120px;
+  background: url(http://www.gunaxin.com/wp-content/uploads/2015/09/Chuck-Norris-2-560x280.jpg) no-repeat;
+  border-radius: 5px 5px 0 0;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px grey, inset 2px 2px 2px grey;
+  text-align: center;
+  padding: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  color: brown;
+}
+
+#bttn:hover {
+  box-shadow: 2px 2px 2px black, inset 2px 2px 2px black;
+}
+

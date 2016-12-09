@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Chuck Norris Jokes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Aleksandra B." />
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i" rel="stylesheet">
+
+
+
+<body onload="starter()">
+    <div class="container">
+    	<div id="bttn" role="button">Click to get <br>a joke</div> 
+    	<div id="output1"></div>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+ 	 $("#bttn").click(function() {
+    $.getJSON("http://api.icndb.com/jokes", function(data) {
+      console.log(data);
+      var count = Object.keys(data).length;
+      var i = Math.floor(Math.random()*539)
+      document.getElementById("output1").innerHTML = data.value[i].joke;
+    });
+
+  });
+});
+
+</script>
+
+</body>
+</html>
